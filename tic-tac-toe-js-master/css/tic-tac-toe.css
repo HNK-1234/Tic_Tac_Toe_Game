@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/1600x900/?sunset,landscape') no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.85);
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 700px;
+  min-height: 500px;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  background-color: #ffcc80;
+  border: 3px solid white;
+  font-size: 80px;
+  color: #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+td:hover {
+  background-color: #ffab40;
+  transform: scale(1.1);
+}
+
+#player {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#turn {
+  font-weight: bold;
+  color: #ff6f00;
+}
